@@ -11,7 +11,6 @@ const Input = ({ onChange, handleButton, clearInput }) => {
         onChange={onChange}
         onKeyDown={(e) => {
           if (e.key.toLowerCase() == "enter") {
-            console.log("Es enter");
             handleButton();
             clearInput(e);
           }
